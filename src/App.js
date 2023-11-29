@@ -13,6 +13,7 @@ import ck2 from "/Users/arnav/Desktop/bitsbids/bitsbids/src/assets/ck2.jpg";
 import ck3 from "/Users/arnav/Desktop/bitsbids/bitsbids/src/assets/ck3.jpeg";
 import ck4 from "/Users/arnav/Desktop/bitsbids/bitsbids/src/assets/ck4.jpg";
 import ck5 from "/Users/arnav/Desktop/bitsbids/bitsbids/src/assets/ck5.jpg";
+import Settings from "./pages/Settings/Settings";
 
 function App() {
   const userEmail = "f20220063@hyderabad.bits-pilani.ac.in";
@@ -35,7 +36,8 @@ function App() {
       <ProductDescription /> */}
       {/* <ProfilePopup userEmail={userEmail} /> */}
       {/* Other components */}
-      <ProductPage />
+      {/* <ProductPage /> */}
+      <Settings />
     </div>
   );
 }

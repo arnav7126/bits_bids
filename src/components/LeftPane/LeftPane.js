@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./LeftPane.css";
-import profilePic from "./assets/profile_pic.jpg";
+import profilePic from "../../assets/profile_pic.jpg";
 
 const Settings = () => {
   const [activePage, setActivePage] = useState(null);
