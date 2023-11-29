@@ -1,0 +1,152 @@
+/* Settings.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #828282; /* Grey background */
+  display: flex;
+}
+
+.settingscontainer {
+  display: flex;
+  width: 100vw; /* Use the entire width of the viewport */
+  height: 100vh; /* Use the entire height of the viewport */
+}
+
+.leftPane {
+  width: 30%;
+  background-color: #464646; /* Darker shade of grey for left pane */
+  padding: 10px;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+.setting {
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.line1 {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(2, 2, 2);
+}
+
+.profileBox {
+  width: 100%;
+  height: 25%;
+  background-color: #333; /* Dark grey */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.profileContent {
+  display: flex;
+  align-items: center;
+}
+
+.profilePicture {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.profileInfo {
+  padding-left: 10px;
+}
+
+.lineBox {
+  width: 100%;
+  height: 100px;
+  background-color: #333; /* Dark grey */
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column; /* Adjusted to a column layout */
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  background-color: white;
+
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+
+.lineTitle {
+  height: 30px;
+  color: white;
+  position: relative; /* Enable absolute positioning relative to this container */
+  left: 15%; /* Match the left position with the line starting point */
+}
+
+.smallBox {
+  width: 100%;
+  height: 250px;
+  background-color: #323232; /* Dark grey */
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column; /* Adjusted to a column layout */
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 15px;
+}
+
+.left-info-box {
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  opacity: 35%;
+  width: 60%;
+  margin: 20px 0 0 20%; /* Adjust the right margin value based on your desired amount of rightward movement */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: #1ef662;
+}
+
+.left-info-section {
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  flex: 1;
+  padding-left: 15%;
+  padding-top: -10px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start; /* Center text within each section */
+  position: relative;
+  right: 0%;
+}
+
+.left-infoboxline {
+  position: relative;
+  left: 15%;
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.left-info-section:last-child {
+  border-bottom: none;
+}
+
+.selected {
+  background-color: #3498db; /* Blue color for selected boxes */
+  color: #fff; /* White text for better visibility */
+}

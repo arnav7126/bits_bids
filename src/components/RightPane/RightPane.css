@@ -1,0 +1,78 @@
+.right-pane {
+  width: 66.66%; /* 2/3rd of the right side of the screen */
+  padding: 20px;
+  border-left: 1px solid #0d0d0d;
+  background-color: #505050; /* Add a border to separate from the main content */
+
+  /* Add any additional styling for the right pane */
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.profile-details {
+  text-align: center;
+  justify-content: center;
+}
+
+.profilePicture1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-image: url("C:/Users/archi/Downloads/profile pic.jpg"); /* Replace with the actual local path to your image */
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto; /* Centers the element horizontally by setting left and right margins to auto */
+}
+
+.name {
+  font-size: 24px;
+  color: white;
+}
+
+.email {
+  font-size: 16px;
+  color: white;
+}
+
+.info-box {
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  opacity: 35%;
+  width: 60%;
+  margin: 20px 0 0 20%; /* Adjust the right margin value based on your desired amount of rightward movement */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: #1ef662;
+}
+
+.info-section {
+  height: 50px;
+  color: white;
+  flex: 1;
+  padding-left: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start; /* Center text within each section */
+  position: relative;
+  right: 0%;
+  border-bottom: 1px solid #3c3f3d;
+}
+
+.infoboxline {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(142, 17, 17);
+  border-left: 10px;
+}
+
+.info-section:last-child {
+  border-bottom: none;
+}

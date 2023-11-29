@@ -1,0 +1,77 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #22272c; /* Dark grey background */
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rectangle {
+  width: 145%;
+  height: 70vh;
+  background-color: #34495e; /* Vertical grey rectangle */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  background-image: url("C:\Users\archi\Downloads\bitsbids.png"); /* Replace with the actual path to your image */
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.description {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: -10px;
+  font-size: small;
+}
+
+.line {
+  width: 70%;
+  height: 1px;
+  background-color: #000; /* Black thin line */
+  margin-top: 10px;
+}
+
+.loginText {
+  color: white;
+  margin-top: -10px;
+  font: bold;
+}
+
+.googleButton {
+  width: 250px;
+  color: black;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-style: Arial;
+}
+
+.googleButton:hover {
+  background-color: #f1f1f1;
+}
