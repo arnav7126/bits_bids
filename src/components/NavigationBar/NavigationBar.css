@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Licon {
+  height: 7vh;
+  width: 4vw;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin-right: 0px;
+}
+
+.Nicon {
+  height: 7vh;
+  width: 4vw;
+  margin-right: 0px;
+  border-radius: 50%;
+}
+.Cicon {
+  height: 7vh;
+  width: 4vw;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.form-control {
+  height: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

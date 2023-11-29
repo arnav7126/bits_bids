@@ -1,0 +1,40 @@
+.product-page {
+  background-color: #323232;
+  color: #fff; /* Assuming you want white text */
+  height: 200vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content,
+.bottom-content {
+  display: flex;
+  flex: 1;
+}
+
+.main-content > .left-pane,
+.bottom-content > .left-pane {
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content > .right-pane {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-content > .left-pane {
+  height: 80vh;
+}
+
+.bottom-content > .right-pane {
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

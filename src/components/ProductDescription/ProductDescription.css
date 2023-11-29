@@ -1,0 +1,34 @@
+.product-description {
+  height: 80vh;
+  width: 50vw;
+  background-color: #505050;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.section {
+  display: flex;
+  height: 10%;
+  width: 90%;
+  margin-bottom: 10px; /* Adjust as needed */
+  color: white;
+}
+
+.description-section {
+  height: 80%;
+  width: 90%;
+  overflow-y: auto; /* Add scroll for overflow */
+  padding-left: 7%;
+  margin-top: 20px;
+  color: white;
+}
+
+.left-pane {
+  width: 30%;
+  font-weight: bold; /* Adjust styling as needed */
+}
+
+.right-pane {
+  width: 70%;
+}

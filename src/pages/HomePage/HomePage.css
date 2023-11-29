@@ -1,0 +1,98 @@
+.division {
+  display: flex;
+  width: 100%;
+}
+
+.first-division {
+  background-color: #565555;
+  height: 80vh;
+}
+
+.left-pane {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-pane {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pane-text {
+  font-weight: bold;
+  height: 20vh;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em; /* Adjust size as needed */
+}
+
+.second-division {
+  background-color: black;
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 5px;
+}
+
+.icon-name {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.redicon {
+  margin-right: 20px;
+  height: 7vh; /* Adjust based on your design */
+  width: 5vw;
+  border-radius: 50%;
+}
+.icon {
+  height: 7vh; /* Adjust based on your design */
+  width: 5vw;
+  border-radius: 50%;
+}
+
+.third-division {
+  height: 100vh;
+  background-color: #ffffff; /* Set the background color as needed */
+}
+/* Add or update the existing styles */
+
+/* Style for the carousel images */
+.main-image {
+  width: 80%;
+  height: 40vh;
+  /* maintain aspect ratio */
+}
+.image-cover {
+  object-fit: cover; /* This will cover the entire area, potentially clipping the image */
+  width: 100%; /* Set to the width of the container */
+  height: 55vh; /* Set to the height of the container */
+}
+
+.image-contain {
+  object-fit: contain; /* This will make sure the entire image fits inside the container */
+  width: 100%; /* Set to the width of the container */
+  height: 55vh; /* The height will adjust to maintain aspect ratio without clipping */
+}
+
+/* Additional styling for the third division as needed */
+.carousel {
+  height: 60vh;
+  width: 50vw;
+}

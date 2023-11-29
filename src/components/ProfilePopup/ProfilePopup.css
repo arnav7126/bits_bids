@@ -1,0 +1,79 @@
+.profile-icon {
+  /* Add styles for profile icon if needed */
+  cursor: pointer;
+  height: 7vh;
+  width: 4vw;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.popup {
+  position: absolute;
+  z-index: 1000;
+  top: 11vh; /* Adjust this value based on the navbar height */
+  right: 1vw;
+  width: 18vw;
+  height: 46vh;
+  background-color: #192734;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.email {
+  color: white;
+  height: 2vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-pic {
+  display: block;
+  width: 4vw;
+  height: 8vh;
+  margin: 10px auto;
+  border-radius: 50px;
+}
+
+.profile-button {
+  display: block;
+  background-color: #8899a6;
+  color: white;
+  border: none;
+  height: 7vh;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 3vh;
+}
+
+.options {
+  background-color: #505050;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+
+.option:last-child {
+  border-bottom: none;
+}
+
+.option-icon {
+  height: 5vh; /* Adjust as needed */
+  margin-right: 10px;
+}
+
+.option span {
+  color: white;
+  font-size: 2vh;
+}
