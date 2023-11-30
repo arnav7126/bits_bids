@@ -3,7 +3,7 @@ import "./NavigationBar.css"; // Import the CSS file for styling
 import menuicon1 from "../../assets/menuicon1.jpg";
 import carticon from "../../assets/carticon.png";
 import profileicon from "../../assets/profileicon.jpeg";
-import notificationicon1 from "../../assets/notificationicon1.jpg";
+import searchicon from "../../assets/searchicon.png";
 import logo from "../../assets/logo.jpeg";
 import buy from "../../assets/buy.png";
 import logout1 from "../../assets/logout1.png";
@@ -12,13 +12,34 @@ import sell5 from "../../assets/sell5.png";
 import { Button, Form, FormControl } from "react-bootstrap";
 import { useState } from "react";
 import ProfilePopup from "../ProfilePopup/ProfilePopup";
+import { useNavigate } from "react-router-dom";
 
 function NavigationBar({ userEmail }) {
+  const navigate = useNavigate();
+
+  const redirectToHomePage = () => {
+    // Redirect to the "settings" route
+    navigate("/");
+  };
+
+  const redirectToOrdersPage = () => {
+    navigate("/orderspage");
+  };
+
+  const redirectToProductList = () => {
+    navigate("/productlist");
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-left">
         {/* <img src={menuicon1} alt="Menu" className="icon" /> */}
-        <img src={logo} alt="Logo" className="Licon" />
+        <img
+          src={logo}
+          alt="Logo"
+          className="Licon"
+          onClick={redirectToHomePage}
+        />
       </div>
       <div className="navbar-right" style={{ width: "30%" }}>
         <Form className="search-bar">
@@ -34,8 +55,18 @@ function NavigationBar({ userEmail }) {
           } */}
         </Form>
 
-        <img src={notificationicon1} alt="Notifications" className="Nicon" />
-        <img src={carticon} alt="Cart" className="Cicon" />
+        <img
+          src={searchicon}
+          alt="searchicon"
+          className="Nicon"
+          onClick={redirectToProductList}
+        />
+        <img
+          src={carticon}
+          alt="Cart"
+          className="Cicon"
+          onClick={redirectToOrdersPage}
+        />
         {/* <img
           src={profileicon}
           alt="Profile"

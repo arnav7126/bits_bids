@@ -13,7 +13,7 @@ body {
   justify-content: center;
   margin-top: 10vh;
   margin-left: 30vw;
-  margin-bottom: 10vh;
+  margin-bottom: 1vh;
 }
 
 .pdtroundedRectangle {
@@ -21,7 +21,8 @@ body {
   background-color: #505050;
   border-radius: 10px;
   padding: 3%;
-  margin: 0 auto; /* Add this line to center the element horizontally */
+  margin: 0 auto;
+  margin-bottom: 1%; /* Add this line to center the element horizontally */
 }
 
 h1 {
@@ -36,12 +37,12 @@ h1 {
 .categoryRectangle {
   border-left: 10px;
   background-color: #323232;
-  height: 8%;
+  height: 20%;
   width: 98%;
   display: flex;
-  padding-top: 1.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-left: 3%;
-
   border-radius: 10px;
   margin-bottom: 2%; /* Add this line to create space below the category rectangle */
 }
@@ -162,5 +163,48 @@ h1 {
   height: 9vh;
   background-color: #505050;
   border-radius: 10px;
+}
+
+.bottomPhotoBox1 {
+  width: calc(
+    25% - 10px
+  ); /* Adjust the width for 4 photos in a row with spacing */
+  margin-right: 10px; /* Add spacing between photo boxes */
+  height: 9vh;
+  background-color: #505050;
+  border-radius: 10px;
+}
+
+.bottomPhotoBox2 {
+  width: calc(
+    25% - 10px
+  ); /* Adjust the width for 4 photos in a row with spacing */
+  margin-right: 10px; /* Add spacing between photo boxes */
+  height: 9vh;
+  background-color: #505050;
+  border-radius: 10px;
+}
+
+.bottomPhotoBox3 {
+  width: calc(
+    25% - 10px
+  ); /* Adjust the width for 4 photos in a row with spacing */
+  margin-right: 10px; /* Add spacing between photo boxes */
+  height: 9vh;
+  background-color: #505050;
+  border-radius: 10px;
+}
+
+.submit-button {
+  display: block;
+  background-color: #8899a6;
+  color: white;
+  border: none;
+  height: 6vh;
+  margin-left: 59%;
+  width: 6.7%;
+  margin-bottom: 1vh;
+  border-radius: 10px;
+  font-size: 3vh;
 }
 /* Adjust the width and margin-right as needed */

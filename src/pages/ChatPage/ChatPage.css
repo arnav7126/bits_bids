@@ -1,0 +1,47 @@
+.chat-user-list {
+  overflow-y: auto;
+  background-color: #464646;
+  padding-top: 2vh;
+}
+
+.chat-profile-icon {
+  width: 30px; /* Adjust as needed */
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+
+.messages-display {
+  overflow-y: auto;
+  background-color: #323232;
+  border-bottom: 1px solid black;
+  /* Add more styling for the messages display area */
+}
+
+.message-input {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px;
+  background-color: #000000;
+}
+
+.chat-messages {
+  background-color: #323232;
+  padding: 0px;
+}
+.message-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.message-input-field {
+  flex-grow: 1;
+  margin-right: 10px; /* Spacing between input field and button */
+}
+
+/* .send-button {
+    
+  } */

@@ -7,12 +7,13 @@ html {
   height: 100%;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
+.product-component-container {
+  width: 27vw;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10%;
 }
 
 .greyRectangle {

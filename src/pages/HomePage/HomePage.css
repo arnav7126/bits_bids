@@ -5,7 +5,7 @@
 
 .first-division {
   background-color: #565555;
-  height: 80vh;
+  height: 77vh;
 }
 
 .left-pane {
@@ -68,7 +68,7 @@
 }
 
 .third-division {
-  height: 100vh;
+  height: 0vh;
   background-color: #ffffff; /* Set the background color as needed */
 }
 /* Add or update the existing styles */

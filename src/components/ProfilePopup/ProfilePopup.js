@@ -1,5 +1,7 @@
+// ProfilePopup.js
 import React, { useState } from "react";
-import "./ProfilePopup.css"; // Import the CSS file for styling
+import { useNavigate } from "react-router-dom"; // Use useNavigate instead of useHistory
+import "./ProfilePopup.css";
 import profileicon from "../../assets/profileicon.jpeg";
 import buy from "../../assets/buy.png";
 import logout1 from "../../assets/logout1.png";
@@ -7,6 +9,27 @@ import sell5 from "../../assets/sell5.png";
 
 function ProfilePopup({ userEmail }) {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+
+  const redirectToSettings = () => {
+    // Redirect to the "settings" route
+    navigate("/settings");
+  };
+
+  const redirectToHomePage = () => {
+    // Redirect to the "settings" route
+    navigate("/");
+  };
+
+  const redirectToAddProduct = () => {
+    // Redirect to the "settings" route
+    navigate("/addproduct");
+  };
+
+  const redirectToLogin = () => {
+    // Redirect to the "settings" route
+    navigate("/login");
+  };
 
   return (
     <>
@@ -21,17 +44,19 @@ function ProfilePopup({ userEmail }) {
         <div className="popup">
           {/* <p className="email">{userEmail}</p> */}
           <img src={profileicon} alt="Profile Pic" className="profile-pic" />
-          <button className="profile-button">Profile</button>
+          <button className="profile-button" onClick={redirectToSettings}>
+            Profile
+          </button>
           <div className="options">
-            <div className="option">
+            <button className="option" onClick={redirectToHomePage}>
               <img src={buy} alt="Buy" className="option-icon" />
               <span>Buy</span>
-            </div>
-            <div className="option">
+            </button>
+            <button className="option" onClick={redirectToAddProduct}>
               <img src={sell5} alt="Sell" className="option-icon" />
               <span>Sell</span>
-            </div>
-            <div className="option">
+            </button>
+            <div className="option" onClick={redirectToLogin}>
               <img src={logout1} alt="Logout" className="option-icon" />
               <span>Logout</span>
             </div>

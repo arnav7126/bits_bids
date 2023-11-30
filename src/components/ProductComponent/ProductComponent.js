@@ -1,9 +1,19 @@
 import React from "react";
 import "./ProductComponent.css"; // Make sure to import the CSS file
+import { useNavigate } from "react-router-dom";
 
-function App() {
+function ProductComponent() {
+  const navigate = useNavigate();
+
+  const redirectToProductPage = () => {
+    // Redirect to the "settings" route
+    navigate("/productpage");
+  };
   return (
-    <div className="container">
+    <div
+      className="product-component-container"
+      onClick={redirectToProductPage}
+    >
       <div className="greyRectangle">
         <div className="leftColumn">
           {/* Left Column - Square Picture */}
@@ -28,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProductComponent;

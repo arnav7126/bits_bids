@@ -18,6 +18,10 @@ import OrdersPage from "./pages/OrdersPane/OrdersPane";
 import ProductDescription from "./components/ProductDescription/ProductDescription";
 import AddProduct from "./pages/AddProduct/AddProduct";
 import ProductComponent from "./components/ProductComponent/ProductComponent";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Funds from "./pages/Funds/Funds";
+import ProductListPage from "./pages/ProductList/ProductList";
+import ChatPage from "./pages/ChatPage/ChatPage";
 
 function App() {
   const userEmail = "f20220063@hyderabad.bits-pilani.ac.in";
@@ -31,30 +35,20 @@ function App() {
   ];
 
   return (
-    <div>
-      <AddProduct />
-      {/* <NavigationBar userEmail={userEmail} /> */}
-      {/* 
-      <ProductPage />
-      <ProductComponent />
-      <OrdersPage />
-       <Login />
-      <ImageCarousel />
-      <Settings />
-      <HomePage />
-      
-       */}
-      {/* <ProfilePopup userEmail={userEmail} /> */}
-      {/* Other components */}
-      {/*   */}
-      {/* 
-      <NavigationBar userEmail={userEmail} />
-      
-      <ImageCarousel />
-      <ProductDescription />
-      <ProductDetails />
-      <SellerChatButton /> */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/addproduct" element={<AddProduct />} />
+        <Route path="/orderspage" element={<OrdersPage />} />
+        <Route path="/productlist" element={<ProductListPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/orderspage" element={<OrdersPage />} />
+        <Route path="/productpage" element={<ProductPage />} />
+        <Route path="/chatpage" element={<ChatPage />} />
+        <Route path="/funds" element={<Funds />} />
+      </Routes>
+    </Router>
   );
 }
 

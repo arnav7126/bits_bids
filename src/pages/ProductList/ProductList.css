@@ -1,0 +1,32 @@
+.filter-section {
+  /* Styles for the filter section */
+  padding: 20px;
+  height: 100vh; /* Adjust as needed */
+  overflow-y: auto; /* Makes the division scrollable */
+  color: white;
+  border-right: 1px solid #8899a6;
+}
+
+.product-list {
+  /* Styles for the product list */
+  padding: 20px;
+  height: auto; /* Adjust as needed */
+  overflow-y: auto; /* Makes the division scrollable */
+}
+
+.search-with-filter-button {
+  display: block;
+  background-color: #8899a6;
+  color: white;
+  border: none;
+  height: 7vh;
+  width: 60%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 3vh;
+  margin-left: 15%;
+}
+
+.dropdown {
+  margin-bottom: 100px;
+}

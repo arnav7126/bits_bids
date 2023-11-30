@@ -1,9 +1,31 @@
 import React, { useState } from "react";
 import "./LeftPane.css";
 import profilePic from "../../assets/profile_pic.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Settings = () => {
   const [activePage, setActivePage] = useState(null);
+  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+
+  const redirectToSettings = () => {
+    // Redirect to the "settings" route
+    navigate("/settings");
+  };
+
+  const redirectToFunds = () => {
+    // Redirect to the "settings" route
+    navigate("/funds");
+  };
+
+  const redirectToLogin = () => {
+    // Redirect to the "settings" route
+    navigate("/login");
+  };
+
+  const redirectToOrdersPage = () => {
+    // Redirect to the "settings" route
+    navigate("/orderspage");
+  };
 
   const handlePageClick = (page) => {
     setActivePage(page);
@@ -20,7 +42,10 @@ const Settings = () => {
           className={`left-profileBox ${
             activePage === "profile" ? "selected" : ""
           }`}
-          onClick={() => handlePageClick("profile")}
+          onClick={() => {
+            handlePageClick("profile");
+            redirectToSettings();
+          }}
         >
           <div className="profileContent">
             <div className="profilePicture">
@@ -39,9 +64,12 @@ const Settings = () => {
             className={`left-info-section ${
               activePage === "orders" ? "selected" : ""
             }`}
-            onClick={() => handlePageClick("orders")}
+            onClick={() => {
+              handlePageClick("orders");
+              redirectToOrdersPage();
+            }}
           >
-            <p>Orders</p>
+            <p>My cart</p>
           </div>
           <div className="left-infoboxline"></div>
           <div
@@ -86,7 +114,10 @@ const Settings = () => {
             className={`left-info-section ${
               activePage === "wallet" ? "selected" : ""
             }`}
-            onClick={() => handlePageClick("wallet")}
+            onClick={() => {
+              handlePageClick("wallet");
+              redirectToFunds();
+            }}
           >
             <p>Wallet</p>
           </div>
@@ -95,7 +126,10 @@ const Settings = () => {
             className={`left-info-section ${
               activePage === "logout" ? "selected" : ""
             }`}
-            onClick={() => handlePageClick("logout")}
+            onClick={() => {
+              handlePageClick("logout");
+              redirectToLogin();
+            }}
           >
             <p>Logout</p>
           </div>

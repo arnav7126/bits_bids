@@ -16,19 +16,16 @@ import ck2 from "../../assets/ck2.jpg";
 import ck3 from "../../assets/ck3.jpeg";
 import ck4 from "../../assets/ck4.jpg";
 import ck5 from "../../assets/ck5.jpg";
+import { useNavigate } from "react-router-dom";
 // ... other imports
 
 function HomePage() {
-  //     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  //     const goToNextImage = () => {
-  //         setCurrentImageIndex((prevIndex) =>
-  //           prevIndex === images.length - 1 ? 0 : prevIndex + 1
-  //         );
-  //       };
-  //       React.useEffect(() => {
-  //         const intervalId = setInterval(goToNextImage, 3000);
-  //         return () => clearInterval(intervalId); // Clear interval on component unmount
-  //   }, []);
+  const navigate = useNavigate();
+
+  const redirectToProductList = () => {
+    navigate("/productlist");
+  };
+
   return (
     <>
       <NavigationBar /> {/* This is your existing navigation bar component */}
@@ -87,27 +84,57 @@ function HomePage() {
       <div className="division second-division">
         {/* Repeat this block for each icon */}
         <div className="icon-container">
-          <img src={books} alt="Books" className="icon" />
+          <img
+            src={books}
+            alt="Books"
+            className="icon"
+            onClick={redirectToProductList}
+          />
           <p className="icon-name">Books</p>
         </div>
         <div className="icon-container">
-          <img src={sports1} alt="Sports" className="icon" />
+          <img
+            src={sports1}
+            alt="Sports"
+            className="icon"
+            onClick={redirectToProductList}
+          />
           <p className="icon-name">Sports</p>
         </div>
         <div className="icon-container">
-          <img src={electronics} alt="Electronics" className="icon" />
+          <img
+            src={electronics}
+            alt="Electronics"
+            className="icon"
+            onClick={redirectToProductList}
+          />
           <p className="icon-name">Electronics</p>
         </div>
         <div className="icon-container">
-          <img src={swd} alt="SWD" className="icon" />
+          <img
+            src={swd}
+            alt="SWD"
+            className="icon"
+            onClick={redirectToProductList}
+          />
           <p className="icon-name">SWD</p>
         </div>
         <div className="icon-container">
-          <img src={accessories1} alt="Accessories" className="icon" />
+          <img
+            src={accessories1}
+            alt="Accessories"
+            className="icon"
+            onClick={redirectToProductList}
+          />
           <p className="icon-name">Accessories</p>
         </div>
         <div className="icon-container">
-          <img src={misc} alt="Misc" className="icon" />
+          <img
+            src={misc}
+            alt="Misc"
+            className="icon"
+            onClick={redirectToProductList}
+          />
           <p className="icon-name">Misc</p>
         </div>
         {/* ... Other icon containers */}

@@ -59,9 +59,14 @@
 
 .option {
   display: flex;
+  width: 100%;
   align-items: center;
   border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
   padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 .option:last-child {

@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AddProduct.css";
 import NavigationBar from "../../components/NavigationBar/NavigationBar"; // Replace with the actual import path
+import { useNavigate } from "react-router-dom";
 
 const AddProduct = () => {
+  const [selectedImages, setSelectedImages] = useState([]);
+  const [selectedImages2, setSelectedImages2] = useState([]);
+
+  const handleImageChange = (e) => {
+    const files = e.target.files;
+    const imageArray = [];
+
+    for (let i = 0; i < files.length; i++) {
+      imageArray.push(URL.createObjectURL(files[i]));
+    }
+
+    setSelectedImages(imageArray);
+  };
+
+  const navigate = useNavigate();
+
+  const prodredirectToHomePage = () => {
+    // Redirect to the "settings" route
+    navigate("/");
+    alert("Your product has been posted");
+  };
+
   return (
     <div>
       <div className="nav-bar">
@@ -55,26 +78,30 @@ const AddProduct = () => {
             <div className="uploadPhotosLabel">Upload Photos:</div>
 
             {/* Individual photo boxes */}
-            <img
-              src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-              className="uploadedPhotoBox"
-            ></img>
-            <img
-              src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-              className="uploadedPhotoBox"
-            ></img>
-            <div className="uploadedPhotoBox"></div>
-            <div className="uploadedPhotoBox"></div>
+
+            <input
+              type="file"
+              accept="image/*"
+              multiple
+              onChange={handleImageChange}
+            />
             <div className="bottom-container">
               {/* Individual photo boxes for the bottom container */}
-              <div className="bottomPhotoBox"></div>
-              <div className="bottomPhotoBox"></div>
-              <div className="bottomPhotoBox"></div>
-              <div className="bottomPhotoBox"></div>
+              {selectedImages.map((imageUrl, index) => (
+                <img
+                  key={index}
+                  src={imageUrl}
+                  alt={`Uploaded ${index}`}
+                  className="bottomPhotoBox"
+                />
+              ))}
             </div>
           </div>
         </div>
       </div>
+      <button className="submit-button" onClick={prodredirectToHomePage}>
+        Post
+      </button>
     </div>
   );
 };
