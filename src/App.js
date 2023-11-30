@@ -17,6 +17,7 @@ import Settings from "./pages/Settings/Settings";
 import OrdersPage from "./pages/OrdersPane/OrdersPane";
 import ProductDescription from "./components/ProductDescription/ProductDescription";
 import AddProduct from "./pages/AddProduct/AddProduct";
+import ProductComponent from "./components/ProductComponent/ProductComponent";
 
 function App() {
   const userEmail = "f20220063@hyderabad.bits-pilani.ac.in";
@@ -31,15 +32,17 @@ function App() {
 
   return (
     <div>
-      <OrdersPage />
+      <AddProduct />
       {/* <NavigationBar userEmail={userEmail} /> */}
       {/* 
       <ProductPage />
+      <ProductComponent />
+      <OrdersPage />
        <Login />
       <ImageCarousel />
       <Settings />
       <HomePage />
-      <AddProduct />
+      
        */}
       {/* <ProfilePopup userEmail={userEmail} /> */}
       {/* Other components */}
