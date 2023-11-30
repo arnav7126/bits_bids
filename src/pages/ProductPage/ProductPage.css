@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.main-content > .right-pane {
+.main-content > .product-page-right-pane {
   width: 40vw;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   height: 80vh;
 }
 
-.bottom-content > .right-pane {
+.bottom-content > .product-page-right-pane {
   width: 40vw;
   height: 20vh;
   display: flex;

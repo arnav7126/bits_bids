@@ -44,7 +44,7 @@ function HomePage() {
             SELL
           </h1>
         </div>
-        <div className="right-pane">
+        <div className="home-right-pane">
           <Carousel classname="carousel">
             <Carousel.Item>
               <img

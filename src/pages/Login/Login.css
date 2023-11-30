@@ -1,9 +1,13 @@
 /* Login.css */
-
 body {
   margin: 0;
+  padding: 0;
+}
+
+.login-body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #22272c; /* Dark grey background */
+  background-color: #131415; /* Dark grey background */
   color: white;
   height: 100vh;
   display: flex;
@@ -17,34 +21,36 @@ body {
   align-items: center;
 }
 
-.rectangle {
-  width: 145%;
+.login-rectangle {
+  width: 50%;
   height: 70vh;
-  background-color: #34495e; /* Vertical grey rectangle */
+  background-color: #373c41; /* Vertical grey rectangle */
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 15vh;
 }
 
 .circle {
   width: 130px;
   height: 130px;
-  background-image: url("C:\Users\archi\Downloads\bitsbids.png"); /* Replace with the actual path to your image */
+  background-image: url("../../assets/logo.jpeg"); /* Replace with the actual path to your image */
   background-size: cover;
   border-radius: 50%;
 }
 
-.description {
+.login-description {
   font-style: italic;
   text-align: center;
   margin-top: 0px;
   margin-bottom: -10px;
   font-size: small;
+  color: white;
 }
 
-.line {
+.login-line {
   width: 70%;
   height: 1px;
   background-color: #000; /* Black thin line */

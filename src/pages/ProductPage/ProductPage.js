@@ -26,7 +26,7 @@ const ProductPage = ({
         <div className="left-pane">
           <ImageCarousel images={product.images} />
         </div>
-        <div className="right-pane">
+        <div className="product-page-right-pane">
           <ProductDetails details={product.details} />
         </div>
       </div>
@@ -38,7 +38,7 @@ const ProductPage = ({
             description={product.description}
           />
         </div>
-        <div className="right-pane">
+        <div className="product-page-right-pane">
           <SellerChatButton seller={product.seller} />
         </div>
       </div>

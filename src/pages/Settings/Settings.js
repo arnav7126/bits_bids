@@ -7,9 +7,11 @@ import LeftPane from "../../components/LeftPane/LeftPane";
 
 const Settings = () => {
   return (
-    <div className="settingscontainer">
-      <LeftPane />
-      <RightPane />
+    <div classname="settings-body">
+      <div className="settingscontainer">
+        <LeftPane />
+        <RightPane />
+      </div>
     </div>
   );
 };

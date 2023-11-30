@@ -7,7 +7,7 @@
   border-radius: 10px;
 }
 
-.section {
+.pdt-section {
   display: flex;
   height: 10%;
   width: 90%;
@@ -15,7 +15,7 @@
   color: white;
 }
 
-.description-section {
+.pdtdescriptionsection {
   height: 80%;
   width: 90%;
   overflow-y: auto; /* Add scroll for overflow */
@@ -29,6 +29,6 @@
   font-weight: bold; /* Adjust styling as needed */
 }
 
-.right-pane {
+.product-description-right-pane {
   width: 70%;
 }

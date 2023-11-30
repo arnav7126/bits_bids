@@ -20,13 +20,13 @@
   border-radius: 10px;
 }
 
-.email {
+/* .profile-popup-email {
   color: white;
   height: 2vh;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
+} */
 
 .profile-pic {
   display: block;

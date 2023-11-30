@@ -1,15 +1,17 @@
 import React from "react";
 import "./AddProduct.css";
+import NavigationBar from "../../components/NavigationBar/NavigationBar"; // Replace with the actual import path
 
 const AddProduct = () => {
   return (
     <div>
-      {/* Top black rectangle */}
-      <div className="topRectangle"></div>
+      <div className="nav-bar">
+        <NavigationBar />
+      </div>
 
       {/* Centered rounded rectangle */}
-      <div className="centeredRectangle">
-        <div className="roundedRectangle">
+      <div className="pdtcenteredRectangle">
+        <div className="pdtroundedRectangle">
           <h1>Post Your Product</h1>
 
           {/* Horizontal rectangle with category dropdown */}
@@ -39,7 +41,7 @@ const AddProduct = () => {
               </select>
             </div>
 
-            <div className="description-section" id="descriptionSection">
+            <div className="pdt-description-section" id="descriptionSection">
               <div className="label">Description:</div>
               <textarea className="input"></textarea>
             </div>

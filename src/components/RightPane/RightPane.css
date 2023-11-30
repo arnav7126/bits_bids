@@ -1,5 +1,5 @@
 .right-pane {
-  width: 66.66%; /* 2/3rd of the right side of the screen */
+  width: 70%; /* 2/3rd of the right side of the screen */
   padding: 20px;
   border-left: 1px solid #0d0d0d;
   background-color: #505050; /* Add a border to separate from the main content */
@@ -58,19 +58,13 @@
   flex: 1;
   padding-left: 10%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   text-align: start; /* Center text within each section */
   position: relative;
   right: 0%;
   border-bottom: 1px solid #3c3f3d;
-}
-
-.infoboxline {
-  width: 80%;
-  height: 1px;
-  background-color: rgb(142, 17, 17);
-  border-left: 10px;
+  padding-top: 10px;
 }
 
 .info-section:last-child {

@@ -53,3 +53,12 @@
   width: 5%;
   background-color: #ccc;
 }
+
+.sold-for {
+  color: black;
+}
+
+.orders-heading {
+  font-size: 135%;
+  color: #ccc;
+}
