@@ -1,18 +1,20 @@
-// OrdersPage.js
 import React, { useState } from "react";
-// import "./OrdersPane.css";
 import LeftPane from "../../components/LeftPane/LeftPane";
-import year1books from "../../assets/books1.jpg";
-import "./Funds.css";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import "./Funds.css";
 
-function Funds({ availableFunds }) {
-  const [fundsToAdd, setFundsToAdd] = useState("");
+function Funds() {
+  const [availableFunds, setAvailableFunds] = useState(0);
+  const [fundsToAdd, setFundsToAdd] = useState(0);
 
   const handleAddFunds = () => {
-    // Implement the logic to handle adding funds
-    console.log(`Adding funds: ${fundsToAdd}`);
-    // Here you would typically make an API call to update the funds in the database
+    const amountToAdd = Number(fundsToAdd);
+    if (!isNaN(amountToAdd) && amountToAdd > 0) {
+      setAvailableFunds(availableFunds + amountToAdd);
+      setFundsToAdd(0); // Optionally reset the input field
+      console.log(`Adding funds: ${amountToAdd}`);
+      // Implement the logic to handle adding funds, like an API call
+    }
   };
 
   return (
